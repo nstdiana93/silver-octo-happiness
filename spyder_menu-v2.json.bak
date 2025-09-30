@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://schemas.conda.io/menuinst-1.schema.json",
+    "menu_name": "Anaconda ({{ DISTRIBUTION_NAME }})",
+    "menu_items": [
+        {
+            "name": "Spyder__ENV_PLACEHOLDER__",
+            "description": "Scientific PYthon Development EnviRonment",
+            "activate": false,
+            "terminal": false,
+            "icon": "{{ MENU_DIR }}/spyder.{{ ICON_EXT }}",
+            "command": ["{{ PREFIX }}/bin/spyder", "$@"],
+            "platforms": {
+                "win": {
+                    "desktop": false,
+                    "quicklaunch": false,
+                    "command": ["{{ PYTHONW }}", "{{ SCRIPTS_DIR }}/spyder-script.py"],
+                    "app_user_model_id": "anaconda.Spyder.{{ DISTRIBUTION_NAME }}.{{ ENV_NAME }}"
+                },
+                "osx": null,
+                "linux": null
+            }
+        }
+    ]
+}
+
