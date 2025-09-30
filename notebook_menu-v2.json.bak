@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://schemas.conda.io/menuinst-1.schema.json",
+    "menu_name": "Anaconda ({{ DISTRIBUTION_NAME }})",
+    "menu_items": [
+        {
+            "name": "Jupyter Notebook__ENV_PLACEHOLDER__",
+            "description": "Jupyter notebook launcher",
+            "activate": false,
+            "terminal": false,
+            "icon": "{{ MENU_DIR }}/jupyter.{{ ICON_EXT }}",
+            "command": [
+                "{{ BASE_PYTHON }}",
+                "{{ BASE_PREFIX }}/cwp.py",
+                "{{ PREFIX }}",
+                "{{ PYTHON }}",
+                "{{ SCRIPTS_DIR }}/jupyter-notebook-script.py",
+                "%USERPROFILE%"
+            ],
+            "platforms": {
+                "win": {
+                    "desktop": false,
+                    "quicklaunch": false,
+                    "app_user_model_id": "anaconda.Jupyter.{{ DISTRIBUTION_NAME }}.{{ ENV_NAME }}"
+                },
+                "linux": null,
+                "osx": null
+            }
+        }
+    ]
+}
