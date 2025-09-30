@@ -1,0 +1,5 @@
+{
+  "target_platform": "win-64",
+  "blas_impl": "mkl",
+  "channel_targets": "defaults"
+}
