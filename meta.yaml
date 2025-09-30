@@ -1,0 +1,119 @@
+# This file created by conda-build 24.9.0
+# ------------------------------------------------
+
+package:
+  name: _anaconda_depends
+  version: '2024.10'
+build:
+  ignore_run_exports:
+    - '*'
+  number: 0
+  string: py312_mkl_0
+requirements:
+  host:
+    - blas 1.0 mkl
+    - bzip2 1.0.8 h2bbff1b_6
+    - ca-certificates 2024.9.24 haa95532_0
+    - expat 2.6.3 h5da7b33_0
+    - libffi 3.4.4 hd77b12b_1
+    - openssl 3.0.15 h827c3e9_0
+    - python 3.12.7 h14ffc60_0
+    - sqlite 3.45.3 h2bbff1b_0
+    - tk 8.6.14 h0416ee5_0
+    - tzdata 2024b h04d1e81_0
+    - vc 14.40 h2eaa2aa_1
+    - vs2015_runtime 14.40.33807 h98bb1dd_1
+    - xz 5.4.6 h8cc25b3_1
+    - zlib 1.2.13 h8cc25b3_1
+  run:
+    - astropy
+    - beautifulsoup4
+    - black
+    - blas * mkl
+    - bokeh
+    - curl
+    - dask
+    - datashader
+    - flask
+    - gensim
+    - h5py
+    - holoviews
+    - hvplot
+    - imbalanced-learn
+    - intake
+    - ipython
+    - isort
+    - joblib
+    - jq
+    - jupyter
+    - jupyterlab
+    - jupyterlab-variableinspector
+    - matplotlib
+    - matplotlib-base
+    - mypy
+    - networkx
+    - nltk
+    - notebook
+    - numba
+    - numpy
+    - openpyxl
+    - pandas
+    - panel
+    - pillow
+    - pip
+    - plotly
+    - pycodestyle
+    - pycurl
+    - pyflakes
+    - pylint
+    - pyodbc
+    - pytables
+    - pytest
+    - python >=3.12,<3.13.0a0
+    - pywavelets
+    - pywin32
+    - requests
+    - s3fs
+    - scikit-image
+    - scikit-learn
+    - scipy
+    - scrapy
+    - seaborn
+    - setuptools
+    - snowballstemmer
+    - spyder
+    - sqlalchemy
+    - statsmodels
+    - streamlit
+    - sympy
+    - tabulate
+    - urllib3
+    - wheel
+    - xlwings
+test:
+  commands:
+    - python --version
+  imports:
+    - pandas
+about:
+  description: 'The same dependencies as the anaconda metapackage, without pinned
+    versions.
+
+    _anaconda_depends is used by anaconda custom to "unlock" the packages so
+
+    that they can be updated after installing Anaconda Distribution.
+
+    '
+  dev_url: https://github.com/ContinuumIO
+  doc_url: https://docs.anaconda.com/anaconda
+  home: https://www.anaconda.com/distribution
+  license: LicenseRef-Anaconda-End-User-License-Agreement
+  license_family: Other
+  license_file: EULA.txt
+  summary: Simplifies package management and deployment of Anaconda
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 09c89b15-3585-4067-8a8f-9a7fda7b2cd9
+  remote_url: git@github.com:AnacondaRecipes/anaconda-feedstock.git
+  sha: 111e30d7d16bdc2718b70eb122dc6bd095eaec8e
