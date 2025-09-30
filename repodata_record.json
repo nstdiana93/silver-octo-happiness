@@ -1,0 +1,21 @@
+{
+  "build": "pyhd3eb1b0_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "fn": "appdirs-1.4.4-pyhd3eb1b0_0.conda",
+  "license": "MIT",
+  "md5": "5673d98d06171cb6eed03a6736845c4d",
+  "name": "appdirs",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "4d849f6c8a4b60166ec21c7716de9589c083c74416a64876dd9ac6c613520a08",
+  "size": 12155,
+  "subdir": "noarch",
+  "timestamp": 1629143509000,
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/appdirs-1.4.4-pyhd3eb1b0_0.conda",
+  "version": "1.4.4"
+}
