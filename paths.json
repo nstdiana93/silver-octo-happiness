@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/appdirs-1.4.4-py3.9.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "c228ea33458e24eb0ba2e3bc2fea9f4dfc01decadfe662966552933eada03bb6",
+      "size_in_bytes": 10868
+    },
+    {
+      "_path": "site-packages/appdirs-1.4.4-py3.9.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "894e7f178df32aa3f6d851af661f7dc2288e4bd6a6cdf820cf4e2105997ba401",
+      "size_in_bytes": 295
+    },
+    {
+      "_path": "site-packages/appdirs-1.4.4-py3.9.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "site-packages/appdirs-1.4.4-py3.9.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "9ca9dc13c094a9911127a56e4162f8fdb92e9d23c335f9fb299a9be13af96043",
+      "size_in_bytes": 8
+    },
+    {
+      "_path": "site-packages/appdirs.py",
+      "path_type": "hardlink",
+      "sha256": "83df6cdac5e19ef4c49bbf688f86d62344e86a973efd298a28d5ef3971e45627",
+      "size_in_bytes": 24720
+    }
+  ],
+  "paths_version": 1
+}
