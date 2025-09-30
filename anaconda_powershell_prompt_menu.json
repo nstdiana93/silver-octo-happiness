@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://schemas.conda.io/menuinst-1.schema.json",
+    "menu_name": "Anaconda ({{ DISTRIBUTION_NAME }})",
+    "menu_items": [
+        {
+            "name": "Anaconda PowerShell Prompt",
+            "activate": false,
+            "terminal": false,
+            "icon": "{{ MENU_DIR }}/anaconda_powershell_prompt.{{ ICON_EXT }}",
+            "description": "Launches a PowerShell window with conda activated.",
+            "working_dir": "{{ HOME }}",
+            "command": [
+                "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "-ExecutionPolicy",
+                "ByPass",
+                "-NoExit",
+                "-Command",
+                "& '{{ BASE_PREFIX }}\\shell\\condabin\\conda-hook.ps1' ; conda activate '{{ PREFIX }}' "
+            ],
+            "platforms": {
+                "win": {
+		    "desktop": false,
+		    "quicklaunch": false,
+                    "terminal_profile": "Anaconda PowerShell Prompt ({{ DISTRIBUTION_NAME }})",
+                    "app_user_model_id": "anaconda.PowerShell.{{ DISTRIBUTION_NAME }}.{{ ENV_NAME }}"
+                },
+		"linux": null,
+		"osx": null
+            }
+        }
+    ]
+}
