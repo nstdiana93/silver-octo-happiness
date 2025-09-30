@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://schemas.conda.io/menuinst-1.schema.json",
+    "menu_name": "Anaconda ({{ DISTRIBUTION_NAME }})",
+    "menu_items": [
+        {
+            "name": "Anaconda Navigator",
+            "activate": false,
+            "terminal": false,
+            "command": ["{{ PREFIX }}/bin/anaconda-navigator"],
+            "description": "User interface for Anaconda to launch applications and manage conda packages, environments, and channels.",
+            "icon": "{{ MENU_DIR }}/anaconda-navigator.{{ ICON_EXT }}",
+            "platforms": {
+                "linux": null,
+                "win": {
+                    "activate": false,
+                    "command": [
+                        "{{ BASE_PYTHONW }}",
+                        "{{ BASE_PREFIX }}/cwp.py",
+                        "{{ PREFIX }}",
+                        "{{ PYTHONW }}",
+                        "{{ SCRIPTS_DIR }}/anaconda-navigator-script.py"
+                    ],
+                    "desktop": false,
+                    "quicklaunch": false,
+                    "app_user_model_id": "anaconda.AnacondaNavigator.{{ DISTRIBUTION_NAME }}.{{ ENV_NAME }}"
+                },
+                "osx": null
+            }
+        }
+    ]
+}
